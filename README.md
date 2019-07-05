@@ -20,3 +20,8 @@
 7- nginx as web server
 8- reduis to cache posts data for 60 secondes in home page
 7- req.headers['refere'] to know from requests come 
+
+
+# login to app
+username: moatasembeksawy@gmail.com 
+password: 123456
