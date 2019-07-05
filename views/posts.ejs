@@ -1,0 +1,38 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <a href="/posts/dashboard" class="btn btn-primary btn-block mb-2"
+          >My Account</a>
+    </div>
+  </div>
+  <div class="container">
+  <div class="table-wrapper">
+        <% if (posts.length > 0) {%>
+            <table class="table table-hovered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Post ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Publish Date</th>
+                        <th scope="col">Posted By</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% posts.forEach((posts, index) => { %>
+                        <tr>
+                            <th scope="row"><%= index+1 %></th>
+                            <td><%= posts.title %></td>
+                            <td><%= posts.date_y %></td>
+                            <td><%= posts.user_name %></td>
+                            <td>
+                                <a href="posts/read_post/<%= posts.post_id %>" rel="noopener" class="btn btn-sm btn-success">Read Post</a>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">There is No Posts Published</p>
+        <% } %>
+    </div>
+</div>

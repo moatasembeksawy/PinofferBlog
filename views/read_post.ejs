@@ -1,0 +1,10 @@
+<div class="container">
+        <div class="col-md-6 m-auto">
+                <a href="/" class="btn btn-primary btn-block mb-2"
+                  >Home Page</a>
+            </div>
+        <p class="lead mb-3"> Post Title </p> <p >   <%= posts[0].title %></p>
+        <p class="lead mb-3"> Post Content</p> <p style="background: gray">   <%=posts[0].content %></p>
+        <p class="lead mb-3"><%=posts[0].date_y %></p>
+        <p class="lead mb-3">FaceBook Views  <span style="color:red; font-weight: bold;"> <%=posts[0].facebook_views %></span>   Google Views   <span style="color:red; font-weight: bold;"><%=posts[0].google_views %></span>  Other Views  <span style="color:red; font-weight: bold;"><%=posts[0].other_views %></span>    Total Views  <span style="color:red; font-weight: bold;"><%=posts[0].total_views %></span> </p>
+</div>
