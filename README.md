@@ -19,7 +19,7 @@
 6- mysql to store data
 7- nginx as web server
 8- reduis to cache posts data for 60 secondes in home page
-7- req.headers['refere'] to know from requests come 
+7- req.headers['referer'] to know from requests come 
 
 
 # login to app
